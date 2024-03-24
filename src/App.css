@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* App.css */
+.container {
+  max-width: 100%; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 0; /* Add some padding to the sides */
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%; /* Ensure the header takes full width */
+}
+
+.navbar {
+  background-color: rgb(44, 38, 38); /* Change the background color to gray */
+  width: 100%; /* Make the navbar expand horizontally to full width */
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 0; /* Adjust vertical padding */
 }
 
-.App-link {
-  color: #61dafb;
+.site-name {
+  color: rgb(238, 230, 230);
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: rgb(243, 238, 238);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
 }
