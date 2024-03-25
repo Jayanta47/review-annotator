@@ -1,6 +1,7 @@
 {
   "name": "review-annotator",
   "version": "0.1.0",
+  "homepage": "http://localhost:3000/select",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

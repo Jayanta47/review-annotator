@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-router-dom';
 import AnnotatePage from './pages/AnnotatePage';
 import VerifyPage from './pages/VerifyPage';
 import SelectPage from './pages/SelectionPage';
@@ -18,13 +18,13 @@ function App() {
               </div>
               <ul className="nav-links">
               <li>
-                  <Link to="/select">Select</Link>
+                  <NavLink to="/select" activeClassName="active">Select</NavLink>
                 </li>
                 <li>
-                  <Link to="/annotate">Annotate</Link>
+                  <NavLink to="/annotate" activeClassName="active">Annotate</NavLink>
                 </li>
                 <li>
-                  <Link to="/verify">Verify</Link>
+                  <NavLink to="/verify" activeClassName="active">Verify</NavLink>
                 </li>
               </ul>
             </nav>

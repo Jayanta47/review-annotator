@@ -15,13 +15,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0; /* Adjust vertical padding */
+  padding: 8px 0; /* Adjust vertical padding */
+  height: 60px;
 }
 
 .site-name {
   color: rgb(238, 230, 230);
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  margin-left: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nav-links {
@@ -37,15 +40,15 @@
 }
 
 .nav-links li:last-child {
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 .nav-links a {
   color: rgb(243, 238, 238);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, .nav-links a:active{
   text-decoration: underline;
 }
