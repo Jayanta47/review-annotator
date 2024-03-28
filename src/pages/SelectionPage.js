@@ -30,6 +30,17 @@ function SelectionPage() {
       });
   };
 
+  const handleReject = (index) => {
+    axios.post('http://127.0.0.1:5000/api/data/save/reject', { index })
+      .then(response => {
+        // Assuming successful response, navigate back to the previous page
+        window.location.reload();
+      })
+      .catch(error => {
+        console.error('Error selecting:', error);
+      });
+  };
+
   if (!data) {
     return <div>Loading...</div>;
   }
@@ -69,6 +80,7 @@ function SelectionPage() {
           ></textarea>
       </div>
       <button onClick={() => handleSelect(data.index)}>Select</button>
+      <button onClick={() => handleReject(data.index)}>Reject</button>
     </div>
   );
 }
